@@ -9,10 +9,17 @@ import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.math.Intersector;
 import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.math.collision.BoundingBox;
 import com.badlogic.gdx.math.collision.Ray;
+
+import ru.tankz.Objects.DefaultTank;
+import ru.tankz.Objects.TankItem;
+import ru.tankz.Tankz;
+import ru.tankz.Utils.Resource;
+import ru.tankz.Utils.TankLoader;
 
 /**
  * Created by ihzork on 29.12.16.
@@ -45,6 +52,14 @@ public class ResearchScreen implements Screen, InputProcessor {
         batcher = new SpriteBatch();
         Gdx.input.setInputProcessor(this);
         Gdx.input.setCatchBackKey(true);
+        Resource resource = new Resource();
+        TankLoader tankLoader = new TankLoader();
+
+        DefaultTank tank= tankLoader.loader("Models/LFT/LFTConfig.json");
+
+
+       // Gdx.app.log( Tankz.LOG, item.toString());
+
     }
 
 

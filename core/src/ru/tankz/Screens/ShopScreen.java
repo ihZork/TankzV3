@@ -12,7 +12,9 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.graphics.g3d.Model;
 import com.badlogic.gdx.graphics.g3d.ModelBatch;
+import com.badlogic.gdx.graphics.g3d.ModelInstance;
 import com.badlogic.gdx.graphics.g3d.utils.CameraInputController;
 import com.badlogic.gdx.graphics.glutils.FrameBuffer;
 import com.badlogic.gdx.math.Intersector;
@@ -70,6 +72,8 @@ public class ShopScreen implements Screen, InputProcessor {
         collisionImage1.set(new Vector3(sprite1.getX(),sprite1.getY(),-10),
                             new Vector3(sprite1.getX() + sprite1.getWidth(),
                             sprite1.getY() + sprite1.getHeight(), 10));
+
+
 
 
 /*

@@ -3,6 +3,7 @@ package ru.tankz;
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.FPSLogger;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -16,7 +17,7 @@ public class Tankz extends Game {
 	// whether we are in development mode
 	public static final boolean DEV_MODE = false;
 	// a libgdx helper class that logs the current FPS each second
-	private com.badlogic.gdx.graphics.FPSLogger fpsLogger;
+	private FPSLogger fpsLogger;
 	@Override
 	public void create () {
 		//Settings.load();
